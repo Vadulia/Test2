@@ -5,6 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import BasicModal from './Modaal';
 import { TextFieldsRounded } from '@mui/icons-material';
 import React from 'react';
+import ClickAwayListener from './Drop';
 
 
 
@@ -37,6 +38,7 @@ function App() {
               <Button color='inherit' variant='outlined' onClick={handelClickOpen}>Log In </Button>
             </Box>
             <Button color='secondary' variant='contained'>Sign Up </Button>
+            <ClickAwayListener />
             
 
             <Dialog open={open} onClose={handelClose} aria-labelledby="form-dialog-title">
